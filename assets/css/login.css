@@ -16,6 +16,7 @@
   --white: #fff;
   --fundo_inputs: #ffffff36;
   --fundo_button: #424242ab;
+  --fundo_button_hover: #424242f3;
   --hover_link: #ffffffa9;
 }
 
@@ -83,6 +84,12 @@ main button{
   font-size: 16px;
   cursor: pointer;
   margin: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+main button:hover{
+  background-color: var(--fundo_button_hover);
+  box-shadow: 0 4px 6px #00000033;
 }
 
 main img{
