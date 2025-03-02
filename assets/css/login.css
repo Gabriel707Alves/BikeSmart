@@ -7,15 +7,95 @@
   text-decoration: none;
 }
 
+/* variáveis */
+:root{
+  /* backgrounds */
+  --background_main: #ffffff1a;
+
+  /* colors */
+  --white: #fff;
+  --fundo_inputs: #ffffff36;
+  --fundo_button: #424242ab;
+  --hover_link: #ffffffa9;
+}
+
+/* fundo */
 body{
   background-image: url('/imagens/fundo_login.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
+/* main da tela de login */
 main{
-  display: grid;
-  grid-template-columns: repeat(2, if);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background_main);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+main h1, p, a{
+  color: var(--white);
+}
+
+main h1{
+  margin: 20px;
+  text-align: center;
+}
+
+main form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form input{
+  margin: 10px 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--fundo_inputs);
+  width: 100%;
+}
+
+main form input::placeholder{
+  color: var(--white);
+  font-size: 16px;
+}
+
+main button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--fundo_button);
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+main img{
+  width: 32px;
+  height: 32px;
+  color: var(--white);
+}
+
+main a.outros{
+  margin: 10px 0px;
+}
+
+main a.outros:hover{
+  text-decoration: underline;
+  color: var(--hover_link);
 }
