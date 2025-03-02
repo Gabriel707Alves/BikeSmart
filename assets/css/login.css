@@ -8,10 +8,14 @@
 }
 
 body{
-  background-image: url('/imagens/fundo2_login.jpg');
+  background-image: url('/imagens/fundo_login.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   background-position: center;
+  height: 100vh;
 }
 
+main{
+  display: grid;
+  grid-template-columns: repeat(2, if);
+}
